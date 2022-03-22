@@ -1,0 +1,111 @@
+<html>
+  <head>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="Head">
+        <img src="https://cdn.freelogovectors.net/wp-content/uploads/2018/09/CMU_Logo_Carnegie_Mellon-University.png" id="logo" height="80px;">
+        Health Connect
+        <input type="text" class="search" placeholder="Search">
+      </div>
+    <div class="black-line"></div>
+    <div class="Head2">
+      <div class="username"> <b>Andrew Julian Wang</b> </div>
+      <div class="short-line"></div>
+      <div> <ul>
+         <li><b><a href="#">Logout</a></b></li>
+         <li><b><a href="#">Feedback</a></b></li>
+         <li><b><a href="#">FAQ</a></b></li>
+  </ul> </div>
+      </div>
+  </body>
+<div class="context"> 
+   <div class="title"><b> Your Most Recent Appointment: </b></div>
+    
+      <div class="con">
+        <div class="dis">
+          <b> Location: </b>
+          <li id="loc">
+          East Campus Garage
+        </li>
+      </div>
+        <div class="dis">
+          <b> Reason: </b>
+        
+        <li id="rea">
+          Covid Testing
+        </li>
+        </div>
+        <div class="dis">
+          <b> Date: </b>
+        <li id="dat">
+          2022-03-24
+        </li>
+        </div>
+        <div class="dis">
+          <b> Timeslot: </b>
+        <li id="tim">
+          10:00 ~ 10:30
+        </li>
+        </div>
+
+      </div>
+    <div class="title"><b> Change Your Appointment: </b></div>
+      <form id="change">
+        <div>
+          <label for="location"><b>Location:</b></label>
+          <select id="location" name="location" onchange="getLocation()" required>
+            <option value="East Campus Garage"> East Campus Garage </option>
+            <option value="TCS Hall"> TCS Hall </option>
+          </select>
+        </div>
+        <div>
+          <label for="reason"><b>Reason:</b></label>
+          <select id="reason" name="reason" onchange="getReason()" required>
+            <option value="Covid Testing"> Covid Testing </option>
+            <option value="Vaccination"> Vaccination </option>
+          </select>
+        </div>
+        <div>
+        <label for="date"><b>Date:</b></label>
+        <input type="date" id="date" name="date" onchange="getDate()" value ="2022-03-24" required>
+        </div>
+        <div>
+          <label for="timeslot"><b>Timeslot:</b></label>
+          <select id="timeslot" name="timeslot" onchange="getTime()" required>
+            <option value="10:00 ~ 10:30"> 10:00 ~ 10:30 </option>
+            <option value="10:30 ~ 11:00"> 10:30 ~ 11:00 </option>
+            <option value="11:00 ~ 11:30"> 11:00 ~ 11:30 </option>
+            <option value="13:00 ~ 13:30"> 13:00 ~ 13:30 </option>
+            <option value="13:30 ~ 14:00"> 13:30 ~ 14:00 </option>
+            <option value="14:00 ~ 14:30"> 14:00 ~ 14:30 </option>
+          </select>
+        </div>
+       <button id="bu" class="small3"> <a href="home.html"> Confirm </a> </button>
+       <button id="bu2" class="small4"> <a href="home.html" class="black"> Cancel </a> </button>
+      </form>
+        
+    
+  
+    <div> <a href= "location.html" class="back"> Back </a> </div>
+  </div>
+  
+      <div class="sticky-sidebar">
+        <div class="scotty">
+          <img src='https://i.postimg.cc/VkFS4qdw/dog.png' border='0' alt='dog' class="scotty"/>
+        </div>
+        <div class="whiteline"></div>
+        <div class="sep"></div>
+        <div class="bar"><b><a href="home.html">Home</a></b></div>
+        <div class="bar"><b><a href="#">Profile</a></b></div>
+        <div class="bar"><b><a href="appointment.html">Appointment</a></b></div>
+        <div class="bar"><b><a href="testing.html">Testing Results</a></b></div>
+        <div class="bar"><b><a href="immune.html">Immunizations</a></b>
+      </div>
+      </div>
+      
+  
+</html>
+
+ 
